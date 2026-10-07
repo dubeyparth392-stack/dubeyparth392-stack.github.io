@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Portfolio</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f7f8fa;
+        color: #17202a;
+        line-height: 1.6;
+    }
+    .wrap { max-width: 900px; margin: auto; padding: 56px 24px; }
+    .hero {
+        background: white;
+        border-radius: 20px;
+        padding: 48px;
+        box-shadow: 0 8px 30px rgba(0,0,0,.06);
+        border: 1px solid #e8eaed;
+    }
+    .tag {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #eef3ff;
+        color: #3157c7;
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+    h1 { font-size: 44px; line-height: 1.1; margin: 0 0 12px; }
+    h2 { font-size: 24px; margin-top: 42px; }
+    .subtitle { font-size: 19px; color: #5f6368; max-width: 680px; }
+    .links { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .links a {
+        text-decoration: none;
+        padding: 10px 16px;
+        border-radius: 10px;
+        border: 1px solid #dadce0;
+        color: #202124;
+        font-weight: 600;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .card {
+        background: white;
+        border: 1px solid #e8eaed;
+        border-radius: 14px;
+        padding: 22px;
+    }
+    .card h3 { margin: 0 0 8px; }
+    .muted { color: #6b7280; }
+    .skills {
+        display: flex; flex-wrap: wrap; gap: 9px; padding: 0; list-style: none;
+    }
+    .skills li {
+        background: white; border: 1px solid #dfe3e8; border-radius: 999px;
+        padding: 7px 12px; font-size: 14px;
+    }
+    footer { text-align: center; color: #73777c; margin-top: 42px; font-size: 14px; }
+    @media(max-width:650px) {
+        .hero { padding: 30px 24px; }
+        h1 { font-size: 36px; }
+        .grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+<body>
+<div class="wrap">
+    <section class="hero">
+        <span class="tag">B.Tech Student · Developer · AI/ML Learner</span>
+        <h1>Building, learning, and turning concepts into working software.</h1>
+        <p class="subtitle">
+            I’m a B.Tech engineering student developing a foundation across Python,
+            backend development, data science, machine learning, and computer science.
+            I enjoy learning by implementing concepts through projects.
+        </p>
+        <div class="links">
+            <a href="https://github.com/dubeyparth392-stack" target="_blank">GitHub</a>
+            <a href="mailto:parth7dubey@gmail.com">Email</a>
+        </div>
+    </section>
+
+    <h2>About</h2>
+    <div class="card">
+        <p>
+            My current focus is on strengthening my programming fundamentals while
+            building practical projects. I have worked with Python, SQL, Flask,
+            FastAPI, Pandas, NumPy and scikit-learn, with growing interest in
+            machine learning and backend systems.
+        </p>
+        <p class="muted">
+            I value hands-on learning, collaboration, and sharing what I learn with others.
+        </p>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <ul class="skills">
+        <li>Python</li><li>SQL</li><li>SQLite</li><li>Flask</li><li>FastAPI</li>
+        <li>REST APIs</li><li>Pandas</li><li>NumPy</li><li>scikit-learn</li>
+        <li>Machine Learning</li><li>Data Structures</li><li>Git & GitHub</li>
+        <li>Jupyter</li><li>HTML/CSS</li>
+    </ul>
+
+    <h2>Projects & Learning</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>ML Prediction API</h3>
+            <p class="muted">
+                Built and explored a machine-learning prediction workflow using
+                scikit-learn, with exposure to serving predictions through a FastAPI endpoint.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Finance Web Application</h3>
+            <p class="muted">
+                Developed a Flask-based web application while working through
+                authentication, database operations, API integration and transactional workflows.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Data Analysis & ML</h3>
+            <p class="muted">
+                Worked with Pandas, NumPy and scikit-learn for data exploration,
+                preprocessing, visualization and introductory machine-learning models.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Computer Science Foundations</h3>
+            <p class="muted">
+                Built fundamentals through coursework covering algorithms, data structures,
+                SQL, Python, memory, recursion, sorting and problem solving.
+            </p>
+        </div>
+    </div>
+
+    <h2>Currently Learning</h2>
+    <div class="card">
+        <p>
+            <strong>Backend development · Machine Learning · APIs · Data Structures ·
+            Practical software development</strong>
+        </p>
+        <p class="muted">
+            My goal is to keep moving from understanding concepts to implementing them
+            in real projects and collaborative environments.
+        </p>
+    </div>
+
+    <footer>
+        <a href="https://github.com/dubeyparth392-stack" target="_blank">github.com/dubeyparth392-stack</a>
+        &nbsp; · &nbsp; parth7dubey@gmail.com
+    </footer>
+</div>
+</body>
+</html>
